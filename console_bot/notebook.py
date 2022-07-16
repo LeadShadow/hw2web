@@ -1,4 +1,5 @@
 """Модуль для роботи з нотатками"""
+from abc import ABC, abstractmethod
 from prompt_toolkit import prompt
 from prompt_toolkit.history import FileHistory
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
@@ -37,6 +38,20 @@ class InputError:
             return 'Error! Date is not valid'
         except IndexError:
             return 'Error! Incorrect argument!'
+
+
+class Abstract(ABC):
+    @abstractmethod
+    def __init__(self):
+        pass
+
+    @abstractmethod
+    def __str__(self):
+        pass
+
+    @abstractmethod
+    def hyphenation_string(self, text):
+        pass
 
 
 class Field:
