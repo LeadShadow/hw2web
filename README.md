@@ -1,6 +1,6 @@
 # ***Console bot for interaction with adressbook, notes, sorting files***
 
-### *Hw2Web*
+## *Hw2Web*
 
 [![Language](https://img.shields.io/badge/language-python-blue?&style=plastic)](https://www.python.org)
 [![Language version](https://img.shields.io/badge/version-3.9-red?&style=plastic)](https://www.python.org/downloads/)
@@ -33,6 +33,9 @@ At the beginning of the program will be menu with choice file which will be work
 Next, type `adressbook` or `notebook` or `file_parser` or `quit` - finish program
 
 Next, type command or `?` - that see commands to interact with file which you selected 
+
+---
+Also have table - draw.io
 
 ---
 ### Authors
