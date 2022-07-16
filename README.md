@@ -37,8 +37,6 @@ Next, type command or `?` - that see commands to interact with file which you se
 ---
 ### Authors
 [![GitHub Contributors Image](https://contrib.rocks/image?repo=LeadShadow/CW-Console-Bot)](https://github.com/LeadShadow)
-[![GitHub Contributors Image](https://contrib.rocks/image?repo=VlodyaKr/Python-6-Core-HomeWork-12)](https://github.com/VlodyaKr)
-[![GitHub Contributors Image](https://contrib.rocks/image?repo=IrynaKupets/hw12)](https://github.com/IrynaKupets)
 ---
 ### Ліцензія
 
