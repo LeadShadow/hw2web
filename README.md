@@ -1,6 +1,6 @@
 # ***Console bot for interaction with adressbook, notes, sorting files***
 
-### *Python 6 Core CW-Console-Bot*
+### *Hw2Web*
 
 [![Language](https://img.shields.io/badge/language-python-blue?&style=plastic)](https://www.python.org)
 [![Language version](https://img.shields.io/badge/version-3.9-red?&style=plastic)](https://www.python.org/downloads/)
