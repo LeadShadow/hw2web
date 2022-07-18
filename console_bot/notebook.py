@@ -5,6 +5,7 @@ from prompt_toolkit.history import FileHistory
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
 from prompt_toolkit.completion import NestedCompleter
 
+from abstractclasses import Abstract_Notebook
 from console_bot.command_parser import RainbowLexer
 import datetime
 import pickle
@@ -38,20 +39,6 @@ class InputError:
             return 'Error! Date is not valid'
         except IndexError:
             return 'Error! Incorrect argument!'
-
-
-class Abstract(ABC):
-    @abstractmethod
-    def __init__(self):
-        pass
-
-    @abstractmethod
-    def __str__(self):
-        pass
-
-    @abstractmethod
-    def hyphenation_string(self, text):
-        pass
 
 
 class Field:
@@ -133,7 +120,7 @@ class Text(Field):
         return f'{self.value}'
 
 
-class Note:
+class Note(Abstract_Notebook):
     """Клас для нотаток"""
     def __init__(self, text: str) -> None:
         NoteBook.id_counter += 1
