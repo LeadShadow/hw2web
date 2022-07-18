@@ -1,5 +1,4 @@
-from abc import ABC, abstractmethod
-
+from abstractclasses import Abstract_Adressbook
 from prompt_toolkit import prompt
 from prompt_toolkit.history import FileHistory
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
@@ -15,40 +14,6 @@ import re
 from console_bot.command_parser import command_parser, RainbowLexer
 
 N = 3  # кількість записів для представлення телефонної книги
-
-
-class Abstract(ABC):
-    @abstractmethod
-    def __init__(self):
-        pass
-
-    @abstractmethod
-    def __str__(self):
-        pass
-
-    @abstractmethod
-    def add_phone(self, phone):
-        pass
-
-    @abstractmethod
-    def del_phone(self, phone):
-        pass
-
-    @abstractmethod
-    def edit_phone(self, phone, new_phone):
-        pass
-
-    @abstractmethod
-    def add_email(self, email):
-        pass
-
-    @abstractmethod
-    def del_email(self, email):
-        pass
-
-    @abstractmethod
-    def days_to_birthday(self, birthday):
-        pass
 
 
 class Field:
@@ -162,7 +127,7 @@ class Email(Field):
             self.__value = result
 
 
-class Record(Abstract):
+class Record(Abstract_Adressbook):
     def __init__(self, name: Name, phones=[], birthday=None, emails=[], address=None) -> None:
         self.name = name
         self.phone_list = phones
